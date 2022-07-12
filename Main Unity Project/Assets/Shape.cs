@@ -12,7 +12,7 @@ public class Shape : MonoBehaviour
     protected new MeshRenderer renderer;
     [SerializeField] internal Mesh mesh;
     [SerializeField] internal Material[] materials;
-    [SerializeField] float roationSpeed;
+    [SerializeField] internal float roationSpeed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class Shape : MonoBehaviour
         SetShape();
     }
 
-    internal void ReturnInput(Text text)
+    internal virtual void ReturnInput(Text text)
     {
         text.text = gameObject.name;
     }
