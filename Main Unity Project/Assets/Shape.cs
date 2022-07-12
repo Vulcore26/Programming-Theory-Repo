@@ -24,7 +24,7 @@ public class Shape : MonoBehaviour
         SetShape();
     }
 
-    internal void ReturnInput(Text text)
+    internal virtual void ReturnInput(Text text)
     {
         text.text = gameObject.name;
     }

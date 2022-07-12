@@ -24,7 +24,7 @@ public class UserInput : MonoBehaviour
         {
             if( hit.transform.CompareTag("Shape"))
             {
-                Shape s = hit.transform.GetComponent<Shape>();
+                Colour s = hit.transform.GetComponent<Colour>();
                 s.ReturnInput(text);
             }
         }
