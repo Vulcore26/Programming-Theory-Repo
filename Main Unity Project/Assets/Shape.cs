@@ -12,7 +12,12 @@ public class Shape : MonoBehaviour
     protected new MeshRenderer renderer;
     [SerializeField] internal Mesh mesh;
     [SerializeField] internal Material[] materials;
-    [SerializeField] internal float roationSpeed = 0.5f;
+    [SerializeField] private float rotationSpeed = 0.5f;
+    internal float RotationSpeed
+    {
+        get { return rotationSpeed; }
+    }
+    [SerializeField] private string shapeName;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +31,7 @@ public class Shape : MonoBehaviour
 
     internal virtual void ReturnInput(Text text)
     {
-        text.text = gameObject.name;
+        text.text = shapeName;
     }
 
     // Update is called once per frame
@@ -41,6 +46,6 @@ public class Shape : MonoBehaviour
 
     private void Update()
     {
-        transform.rotation *= Quaternion.Euler(1f * roationSpeed,0, 1f * roationSpeed) ;
+        transform.rotation *= Quaternion.Euler(1f * rotationSpeed,0, 1f * rotationSpeed) ;
     }
 }

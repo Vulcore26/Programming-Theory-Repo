@@ -9,12 +9,12 @@ public class Cylinder : Shape
     internal override void ReturnInput(Text text)
     {
         pauseTimer = 3f;
-        text.text = gameObject.name;
+        base.ReturnInput(text);
     }
     private void Update()
     {
         if (pauseTimer <= 0)
-            transform.rotation *= Quaternion.Euler(1f * roationSpeed, 0, 1f * roationSpeed);
+            transform.rotation *= Quaternion.Euler(1f * RotationSpeed, 0, 1f * RotationSpeed);
         else
             pauseTimer -= Time.deltaTime;
 

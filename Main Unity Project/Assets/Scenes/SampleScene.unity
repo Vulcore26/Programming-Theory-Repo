@@ -159,6 +159,7 @@ MonoBehaviour:
   materials:
   - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   roationSpeed: 0.5
+  shapeName: Cylinder
   pauseTimer: 0
 --- !u!23 &490414406
 MeshRenderer:
@@ -445,6 +446,7 @@ MonoBehaviour:
   materials:
   - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   roationSpeed: 0.5
+  shapeName: Cube
 --- !u!4 &911746037
 Transform:
   m_ObjectHideFlags: 0
@@ -707,6 +709,7 @@ MonoBehaviour:
   materials:
   - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   roationSpeed: 0.5
+  shapeName: Capsule
 --- !u!23 &1934690149
 MeshRenderer:
   m_ObjectHideFlags: 0
